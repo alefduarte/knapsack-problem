@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(11px + 2vmin);
+  color: white;
+}
+
+.page-content {
+  padding: 30px 40px 0px 40px;
+  min-height: 80vh !important;
+  background-color: #282c34;
+}
+
+.mochila-table {
+  background-color: #ffffff !important;
+  margin-bottom: 10px;
+}
+
+.tamanho-mochila {
+  position: absolute;
+  right: 70px;
+  top: 40px;
+}
+
+.tamanho-mochila > p {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.backpack-text {
+  color: green !important;
+  font-size: 16px;
+}
+
+.backpack-text::after {
+  position: absolute;
+  content: "Adicionado";
+  display: block;
+  animation: fade-out 1s forwards;
+  margin: -35px 0px 0px 0px;
+  opacity: 1;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    margin: -24px 0px 0px 0px;
+  }
+  to {
+    opacity: 0;
+    margin: -50px 0px 0px 30px;
+  }
+}
+
+.refresh-items {
+  position: absolute !important;
+  top: 120px;
+  left: 40px;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .tamanho-mochila {
+    position: absolute;
+    width: 116px;
+    right: 0px;
+    top: 79px;
+    line-height: 14px;
+  }
+}
